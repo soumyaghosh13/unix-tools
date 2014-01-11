@@ -22,10 +22,3 @@ class Sorter {
         }
     }
 }
-
-//public class Sort {
-//    public static void main(String[] args) {
-//        Sorter sorter = new Sorter();
-//        sorter.Sorted(args[0],args);
-//    }
-//}
