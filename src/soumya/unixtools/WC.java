@@ -4,7 +4,7 @@ import soumya.fileread.readfile;
 
 import java.io.IOException;
 
-class WC{
+class WC {
     public static void main(String[] args) throws IOException {
         readfile myFile = new readfile();
         Count count = new Count();
@@ -15,11 +15,11 @@ class WC{
         int noOfCharacter = count.charCount(input);
         int noOfWords = count.wordCount(input);
 
-        System.out.println(noOfLines +" "+noOfWords+" "+noOfCharacter+" "+ args[0]);
+        System.out.println(noOfLines + " " + noOfWords + " " + noOfCharacter + " " + args[0]);
     }
 }
 
-class Count{
+class Count {
     public int lineCount(String text) {
         String[] lines = text.split("\n");
         return lines.length;

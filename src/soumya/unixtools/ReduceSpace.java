@@ -1,13 +1,14 @@
 package soumya.unixtools;
 
 import soumya.fileread.readfile;
+
 import java.io.IOException;
 
 
 public class ReduceSpace {
-    public void trimSpace(String text){
+    public void trimSpace(String text) {
         String formtattedText;
-        formtattedText = text.replaceAll("\\ +"," ");
+        formtattedText = text.replaceAll("\\ +", " ");
         System.out.println(formtattedText);
     }
 
