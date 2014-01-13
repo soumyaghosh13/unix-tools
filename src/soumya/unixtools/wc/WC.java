@@ -1,12 +1,12 @@
-package soumya.unixtools;
+package soumya.unixtools.wc;
 
-import soumya.fileread.readfile;
+import soumya.fileread.Readfile;
 
 import java.io.IOException;
 
 class WC {
     public static void main(String[] args) throws IOException {
-        readfile myFile = new readfile();
+        Readfile myFile = new Readfile();
         Count count = new Count();
 
         String input = myFile.readFile(args[0]);

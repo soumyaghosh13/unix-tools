@@ -1,4 +1,4 @@
-package soumya.unixtools;
+package soumya.unixtools.reduceSpace;
 
 import soumya.fileread.Readfile;
 

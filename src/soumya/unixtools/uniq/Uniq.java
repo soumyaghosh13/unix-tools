@@ -1,4 +1,4 @@
-package soumya.unixtools;
+package soumya.unixtools.uniq;
 
 import soumya.fileread.Readfile;
 import java.io.IOException;

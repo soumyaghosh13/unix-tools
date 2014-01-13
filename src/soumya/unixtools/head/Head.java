@@ -1,4 +1,4 @@
-package soumya.unixtools;
+package soumya.unixtools.head;
 
 import soumya.fileread.Readfile;
 
