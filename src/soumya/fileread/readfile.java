@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * Created by soumyagh on 1/9/14.
  */
-public class readfile {
+public class Readfile {
     public String readFile(String fileName) throws IOException {
         String returnValue = "";
         File file = new File(fileName);

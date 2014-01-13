@@ -1,7 +1,7 @@
 package soumya.unixtools;
 
-import soumya.fileread.readfile;
-import soumya.fileread.readfile;
+import soumya.fileread.Readfile;
+import soumya.fileread.Readfile;
 
 import java.io.IOException;
 
@@ -18,7 +18,7 @@ public class Tail {
     public static void main(String[] args) throws IOException {
         Tail tail = new Tail();
 
-        readfile read = new readfile();
+        Readfile read = new Readfile();
         String text = read.readFile(args[0]);
 
         try {

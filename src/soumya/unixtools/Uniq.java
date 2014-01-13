@@ -1,6 +1,6 @@
 package soumya.unixtools;
 
-import soumya.fileread.readfile;
+import soumya.fileread.Readfile;
 import java.io.IOException;
 
 public class Uniq {
@@ -15,7 +15,7 @@ public class Uniq {
     }
 
     public static void main(String[] args) throws IOException {
-        readfile read = new readfile();
+        Readfile read = new Readfile();
         String fileContent = read.readFile(args[0]);
         Uniq uniq = new Uniq();
         uniq.printUniqLines(fileContent);

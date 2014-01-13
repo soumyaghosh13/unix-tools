@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4c42504-761b-4dea-aff6-0543a4ff9304" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soumya/unixtools/Sort.java" afterPath="$PROJECT_DIR$/src/soumya/unixtools/Sort.java" />
+      <change type="DELETED" beforePath="D:\projects\unix-tools\src\soumya\unixtools\Sort.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\unix-tools\src\soumya\unixtools\cut.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soumya/unixtools/Head.java" afterPath="$PROJECT_DIR$/src/soumya/unixtools/Head.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soumya/unixtools/ReduceSpace.java" afterPath="$PROJECT_DIR$/src/soumya/unixtools/ReduceSpace.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soumya/unixtools/Tail.java" afterPath="$PROJECT_DIR$/src/soumya/unixtools/Tail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soumya/unixtools/Uniq.java" afterPath="$PROJECT_DIR$/src/soumya/unixtools/Uniq.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/soumya/fileread/Readfile.java" afterPath="$PROJECT_DIR$/src/soumya/fileread/Readfile.java" />
     </list>
     <ignored path="unix-tools.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,21 +73,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Head.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Head.java">
+      <file leaf-file-name="InputHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/cut/InputHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="45" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="578">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="6" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.25822785" vertical-offset="0" max-vertical-offset="395">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sort.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Sort.java">
+      <file leaf-file-name="Cut.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/cut/Cut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.52112675" vertical-offset="16" max-vertical-offset="510">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,11 +113,15 @@
         <option value="$PROJECT_DIR$/src/soumya/unixtools/TrimSpace.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/Cut.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/WC.java" />
-        <option value="$PROJECT_DIR$/src/soumya/unixtools/ReduceSpace.java" />
-        <option value="$PROJECT_DIR$/src/soumya/unixtools/Head.java" />
-        <option value="$PROJECT_DIR$/src/soumya/unixtools/Tail.java" />
-        <option value="$PROJECT_DIR$/src/soumya/unixtools/Uniq.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/Sort.java" />
+        <option value="$PROJECT_DIR$/src/soumya/unixtools/InputHandler.java" />
+        <option value="$PROJECT_DIR$/src/soumya/fileread/readfile.java" />
+        <option value="$PROJECT_DIR$/src/soumya/unixtools/Tail.java" />
+        <option value="$PROJECT_DIR$/src/soumya/unixtools/Head.java" />
+        <option value="$PROJECT_DIR$/src/soumya/unixtools/ReduceSpace.java" />
+        <option value="$PROJECT_DIR$/src/soumya/unixtools/Uniq.java" />
+        <option value="$PROJECT_DIR$/src/soumya/unixtools/cut/InputHandler.java" />
+        <option value="$PROJECT_DIR$/src/soumya/unixtools/cut/Cut.java" />
       </list>
     </option>
   </component>
@@ -150,6 +158,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,8 +247,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Sort.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <option name="myItemId" value="cut" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -261,6 +270,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="unixtools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cut" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -292,7 +305,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,27 +329,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Head">
+  <component name="RunManager" selected="Application.Cut">
     <configuration default="false" name="Head" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="soumya.unixtools.Head" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="D:\abc.txt 5" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="unix-tools" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Uniq" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="soumya.unixtools.Uniq" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="D:\abc.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -398,6 +394,22 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="Cut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="soumya.unixtools.cut.Cut" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="unix-tools" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -432,6 +444,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -457,19 +482,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -544,18 +556,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Tail" />
       <item index="1" class="java.lang.String" itemvalue="Application.Head" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Uniq" />
-      <item index="3" class="java.lang.String" itemvalue="Application.WC" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ReduceSpace" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Sort" />
+      <item index="2" class="java.lang.String" itemvalue="Application.WC" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ReduceSpace" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Sort" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Cut" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Head" />
-        <item index="1" class="java.lang.String" itemvalue="Application.WC" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Sort" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ReduceSpace" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Uniq" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Cut" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Head" />
+        <item index="2" class="java.lang.String" itemvalue="Application.WC" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Sort" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ReduceSpace" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -599,11 +611,15 @@
       <created>1389429024708</created>
       <updated>1389429024708</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Sort Started&#10;">
+      <created>1389429305282</created>
+      <updated>1389429305283</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1136" height="679" extended-state="6" />
+    <frame x="-8" y="-8" width="1136" height="679" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -616,19 +632,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2652705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2652705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21116929" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23303571" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -656,15 +672,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Cut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="561">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/ReduceSpace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="33" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="510">
@@ -677,7 +684,9 @@
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/WC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="32" selection-start="27" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="714">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -693,20 +702,15 @@
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Tail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="646">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Uniq.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="34" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Cut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -716,7 +720,9 @@
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/WC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="32" selection-start="27" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="714">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -732,68 +738,47 @@
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Tail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="27" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="646">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Uniq.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="44" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="493">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/soumya/fileread/readfile.java">
+    <entry file="file://$PROJECT_DIR$/src/soumya/fileread/Readfile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/soumya/fileread/readfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="383" selection-end="383" vertical-scroll-proportion="0.47887325" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/ReduceSpace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="493">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/WC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.35915494" vertical-offset="51" max-vertical-offset="714">
+        <state line="20" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.53747714" vertical-offset="46" max-vertical-offset="714">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soumya/fileread/Readfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="20" selection-start="457" selection-end="457" vertical-scroll-proportion="0.43510056" vertical-offset="0" max-vertical-offset="547">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Tail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="596" selection-end="596" vertical-scroll-proportion="0.52112675" vertical-offset="84" max-vertical-offset="595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Uniq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="9" selection-start="385" selection-end="385" vertical-scroll-proportion="0.47887325" vertical-offset="0" max-vertical-offset="476">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Cut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="582" selection-end="582" vertical-scroll-proportion="0.52112675" vertical-offset="135" max-vertical-offset="561">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -802,19 +787,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Head.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="45" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="578">
+        <state line="28" column="1" selection-start="766" selection-end="766" vertical-scroll-proportion="0.91392404" vertical-offset="115" max-vertical-offset="578">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Sort.java">
+    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/ReduceSpace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.52112675" vertical-offset="16" max-vertical-offset="510">
+        <state line="8" column="40" selection-start="158" selection-end="158" vertical-scroll-proportion="0.33670887" vertical-offset="3" max-vertical-offset="493">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/Uniq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="678" selection-end="678" vertical-scroll-proportion="0.91392404" vertical-offset="13" max-vertical-offset="476">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/cut/Cut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/cut/InputHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.25822785" vertical-offset="0" max-vertical-offset="395">
+          <folding />
         </state>
       </provider>
     </entry>

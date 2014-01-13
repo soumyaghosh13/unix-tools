@@ -1,6 +1,6 @@
 package soumya.unixtools;
 
-import soumya.fileread.readfile;
+import soumya.fileread.Readfile;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ public class Head {
 
     public static void main(String[] args) throws IOException {
         Head head = new Head();
-        readfile read = new readfile();
+        Readfile read = new Readfile();
         String text = read.readFile(args[0]);
 
         try {

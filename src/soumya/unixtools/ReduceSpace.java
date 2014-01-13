@@ -1,6 +1,6 @@
 package soumya.unixtools;
 
-import soumya.fileread.readfile;
+import soumya.fileread.Readfile;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ public class ReduceSpace {
 
 
     public static void main(String[] args) throws IOException {
-        readfile read = new readfile();
+        Readfile read = new Readfile();
         String fileText = read.readFile(args[0]);
         ReduceSpace trim = new ReduceSpace();
         trim.trimSpace(fileText);
