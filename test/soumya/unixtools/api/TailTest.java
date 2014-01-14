@@ -7,22 +7,22 @@ import static org.junit.Assert.assertEquals;
 
 public class TailTest {
     @Test
-    public void testGetLines() throws Exception {
-        String data = "Kunal\nis\ngreat\nI\n";
-        String expected = "I\ngreat\nis\n";
+    public void test_tail_should_print_last_10_lines_without_parameter() throws Exception {
+        String input = "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13";
+        String expected = "13\n12\n11\n10\n9\n8\n7\n6\n5\n4\n";
         Tail ob = new Tail();
 
-        String actual = ob.getLines(data);
+        String actual = ob.getLines(input);
 
         assertEquals(expected, actual);
     }
     @Test
-    public void testGet10Lines() throws Exception {
-        String data = "Kunal\nis\ngreat\nI\nam\na\nbig\nfan\nof\nhis\ni\nthink\ntooo";
-        String expected = "tooo\nthink\ni\nhis\nof\nfan\nbig\na\nam\nI\n";
+    public void test_tail_should_print_given_no_of_lines() throws Exception {
+        String input = "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13";
+        String expected = "13\n12\n11\n10\n";
         Tail ob = new Tail();
 
-        String actual = ob.getLines(data);
+        String actual = ob.getLines(input,5);
 
         assertEquals(expected, actual);
     }

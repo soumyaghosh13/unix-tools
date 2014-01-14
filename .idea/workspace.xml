@@ -11,8 +11,7 @@
       <change type="DELETED" beforePath="D:\projects\unix-tools\src\soumya\unixtools\tail\Tail.java" afterPath="" />
       <change type="DELETED" beforePath="D:\projects\unix-tools\src\soumya\unixtools\uniq\Uniq.java" afterPath="" />
       <change type="DELETED" beforePath="D:\projects\unix-tools\src\soumya\unixtools\wc\WC.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unix-tools.iml" afterPath="$PROJECT_DIR$/unix-tools.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/soumya/unixtools/api/TailTest.java" afterPath="$PROJECT_DIR$/test/soumya/unixtools/api/TailTest.java" />
     </list>
     <ignored path="unix-tools.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,19 +75,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HeadTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/soumya/unixtools/api/HeadTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="45" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.54913294" vertical-offset="643" max-vertical-offset="1020">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Head.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/api/Head.java">
+      <file leaf-file-name="Uniq.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/api/Uniq.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
@@ -96,13 +84,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TailTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/soumya/unixtools/api/TailTest.java">
+      <file leaf-file-name="UniqTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/soumya/unixtools/api/UniqTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+            <state line="20" column="29" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="493">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sort.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/api/Sort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="28" selection-start="277" selection-end="277" vertical-scroll-proportion="0.42618385" vertical-offset="0" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeadTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/soumya/unixtools/api/HeadTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="4" selection-start="205" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/soumya/unixtools/api/cut.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/api/Head.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/api/ReduceSpaces.java" />
-        <option value="$PROJECT_DIR$/src/soumya/unixtools/api/Tail.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/api/Uniq.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/cli/CutMain.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/fs/MyFile.java" />
@@ -150,10 +155,13 @@
         <option value="$PROJECT_DIR$/src/soumya/unixtools/cli/TrimSpaces.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/cli/UniqMain.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/cli/WordCountMain.java" />
-        <option value="$PROJECT_DIR$/test/soumya/unixtools/api/TailTest.java" />
         <option value="$PROJECT_DIR$/src/soumya/unixtools/api/WordCount.java" />
         <option value="$PROJECT_DIR$/test/soumya/unixtools/api/WordCountTest.java" />
         <option value="$PROJECT_DIR$/test/soumya/unixtools/api/HeadTest.java" />
+        <option value="$PROJECT_DIR$/src/soumya/unixtools/api/Tail.java" />
+        <option value="$PROJECT_DIR$/test/soumya/unixtools/api/TailTest.java" />
+        <option value="$PROJECT_DIR$/test/soumya/unixtools/api/UniqTest.java" />
+        <option value="$PROJECT_DIR$/src/soumya/unixtools/api/Sort.java" />
       </list>
     </option>
   </component>
@@ -261,6 +269,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="cli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unix-tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unix-tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unixtools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -298,39 +328,7 @@
       <recent name="D:\projects\unix-tools\src\soumya\unixtools\api" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HeadTest">
-    <configuration default="false" name="Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="soumya.unixtools.sort.Sort" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="D:\abc.txt" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="unix-tools" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="WordCountMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="soumya.unixtools.cli.WordCountMain" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="D:\abc.txt" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="unix-tools" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.UniqTest">
     <configuration default="false" name="WordCountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unix-tools" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -381,6 +379,50 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="soumya.unixtools.api" />
       <option name="MAIN_CLASS_NAME" value="soumya.unixtools.api.HeadTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unix-tools" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="soumya.unixtools.api" />
+      <option name="MAIN_CLASS_NAME" value="soumya.unixtools.api.TailTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UniqTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unix-tools" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="soumya.unixtools.api" />
+      <option name="MAIN_CLASS_NAME" value="soumya.unixtools.api.UniqTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -542,19 +584,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Tail" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Sort" />
-      <item index="2" class="java.lang.String" itemvalue="Application.WordCountMain" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WordCountTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WordCountTest (1)" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.HeadTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.WordCountTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.WordCountTest (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HeadTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TailTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.UniqTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.HeadTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WordCountTest (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WordCountTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.WordCountMain" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Sort" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UniqTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TailTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HeadTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.WordCountTest (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.WordCountTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -698,20 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/api/Uniq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/api/Tail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/fs/MyFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="697">
@@ -780,16 +808,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/soumya/unixtools/api/TailTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -801,12 +820,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/soumya/unixtools/api/HeadTest.java">
+    <entry file="file://$PROJECT_DIR$/test/soumya/unixtools/api/TailTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.54913294" vertical-offset="643" max-vertical-offset="1020">
+        <state line="18" column="9" selection-start="524" selection-end="524" vertical-scroll-proportion="0.47910863" vertical-offset="134" max-vertical-offset="595">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/api/Tail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="30" selection-start="646" selection-end="646" vertical-scroll-proportion="0.81058496" vertical-offset="49" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/soumya/unixtools/api/HeadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="205" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/api/Uniq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/soumya/unixtools/api/UniqTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="29" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="493">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soumya/unixtools/api/Sort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="28" selection-start="277" selection-end="277" vertical-scroll-proportion="0.42618385" vertical-offset="0" max-vertical-offset="374">
+          <folding />
         </state>
       </provider>
     </entry>
