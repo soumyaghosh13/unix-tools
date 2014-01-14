@@ -1,22 +1,16 @@
 package soumya.unixtools.api;
 
-public class Uniq{
-    public String[] getUniqLines(String lines){
-
-        String[] result = lines.split("\n");
-        int length = result.length-1;
-
-        String[] uniqLines = new String[length];
-        int j =0;
-        for(int i=0; i< length; i++){
-            if(!result[i].equals(result[i + 1])){
-                uniqLines[j] = result[i];
-                j++;
-                System.out.println(j);
-            }
+public class Uniq {
+    public String getUniqueLines(String text) {
+        StringBuilder result = new StringBuilder("");
+        String[] lines;
+        lines = text.split("\n");
+        result.append(lines[0]).append("\n");
+        for (int i = 0; i < lines.length - 1; i++) {
+            if (!lines[i].equalsIgnoreCase(lines[i + 1]))
+                result.append(lines[i + 1]).append("\n");
+            else i++;
         }
-        uniqLines[j] = result[length];
-
-        return  uniqLines;
+        return result.toString();
     }
 }

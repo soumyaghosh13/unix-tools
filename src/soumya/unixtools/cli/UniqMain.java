@@ -1,21 +1,18 @@
-package tanbirka.unixtools.cli;
+package soumya.unixtools.cli;
 
-import soumya.unixtools.api.Uniq;
 import soumya.unixtools.fs.MyFile;
+import soumya.unixtools.api.Uniq;
 
 import java.io.IOException;
 
 public class UniqMain {
-    public static void main(String[] args) throws IOException {
-        MyFile myFile = new MyFile();
-        Uniq lines = new Uniq();
-
-        String input = myFile.readFile(args[0]);
-        String[] uniqLines =  lines.getUniqLines(input);
-
-        for (String uniqLine : uniqLines) {
-            System.out.println(uniqLine);
+    public static void main(String[] args) {
+        String text;
+        try {
+            text = new MyFile().readFile(args[0]);
+            System.out.println(new Uniq().getUniqueLines(text));
+        } catch (IOException e) {
+            System.err.println("Something went wrong");
         }
     }
 }
-
