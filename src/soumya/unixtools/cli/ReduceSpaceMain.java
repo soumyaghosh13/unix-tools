@@ -5,7 +5,7 @@ import soumya.unixtools.fs.MyFile;
 
 import java.io.IOException;
 
-public class TrimSpaces {
+public class ReduceSpaceMain {
     public static void main(String[] args) throws IOException {
         MyFile myFile = new MyFile();
         ReduceSpaces rs = new ReduceSpaces();
