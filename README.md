@@ -1,6 +1,6 @@
 Unix Tools
 ====================
-Basic Unix Tools like WordCount,Head,Tail,Uniq,Cut,Sort Done. ReduceSpace is Done.
+Basic Unix Tools like WordCount,Head,Tail,Uniq,Cut,Sort Done and ReduceSpace is Done with Java.
 
 ## wc :
 ##### Stands for word count, wc displays a count of lines, words, and characters in a file.
