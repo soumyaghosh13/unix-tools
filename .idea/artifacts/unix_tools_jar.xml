@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="unix-tools:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/unix_tools_jar</output-path>
+    <root id="archive" name="unix-tools.jar">
+      <element id="module-output" name="unix-tools" />
+    </root>
+  </artifact>
+</component>
