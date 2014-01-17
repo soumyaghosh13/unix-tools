@@ -5,9 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-/**
- * Created by soumyagh on 1/9/14.
- */
+
 public class Readfile {
     public String readFile(String fileName) throws IOException {
         String returnValue = "";
