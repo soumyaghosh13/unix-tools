@@ -1,35 +1,151 @@
-<project name = "unix-tools">
+<project name="unix-tools">
+
+    <path id="classpath">
+        <fileset dir="dependencies" includes="*.jar"/>
+    </path>
+
+    <property name="build" location="build"/>
+
     <target name="clean">
-        <delete dir = "classes"></delete>
-        <delete dir = "unix-tools"></delete>
-        <delete dir = "unix-tools/lib"></delete>
-        <delete dir = "unix-tools/bin"></delete>
+        <delete dir="build"/>
     </target>
-    <target name = "compile">
-        <mkdir dir = "classes"></mkdir>
-        <javac srcdir = "src" destdir = "classes"></javac>
+
+    <target name="init">
+        <mkdir dir="build/code-coverage/instrumented" />
+        <mkdir dir="build/code-coverage/reports/xml" />
+        <mkdir dir="build/code-coverage/reports/html" />
+        <mkdir dir="build/code-coverage/coverage/xml" />
+        <mkdir dir="build/code-coverage/coverage/summaryxml" />
+        <mkdir dir="build/code-coverage/coverage/html" />
     </target>
-    <target name = "createDir" depends = "compile">
-        <mkdir dir = "unix-tools"></mkdir>
-        <mkdir dir="unix-tools/lib"></mkdir>
-        <mkdir dir = "unix-tools/bin"></mkdir>
+
+    <path id="cobertura.classpath">
+        <fileset dir="dependencies/code-coverage">
+            <include name="cobertura-2.0.3.jar" />
+            <include name="lib/**/*.jar" />
+        </fileset>
+    </path>
+    <taskdef classpathref="cobertura.classpath" resource="tasks.properties"/>
+
+    <target name="compile" depends="init">
+        <mkdir dir="build/src"/>
+        <javac srcdir="src" destdir="build/src" includeAntRuntime="false" debug="yes">
+            <classpath refid="cobertura.classpath" />
+        </javac>
     </target>
-    <target name="createJar" depends="createDir">
-        <jar destfile = "unix-tools/lib/unix-tools.jar" basedir = "classes"></jar>
+
+    <target name="compileTests" depends="compile">
+        <mkdir dir="build/test"/>
+        <javac srcdir="test" destdir="build/test" classpath="build/src" classpathref="classpath"
+               includeAntRuntime="false">
+            <classpath refid="cobertura.classpath" />
+        </javac>
     </target>
-    <target name="copyShells" depends="createJar">
-        <copy file = "sh/svSort.sh" todir = "unix-tools/bin"></copy>
-        <copy file = "sh/svHead.sh" todir = "unix-tools/bin"></copy>
-        <copy file = "sh/svTail.sh" todir = "unix-tools/bin"></copy>
-        <copy file = "sh/svUniq.sh" todir = "unix-tools/bin"></copy>
-        <copy file = "sh/svWc.sh" todir = "unix-tools/bin"></copy>
-        <copy file = "sh/svCut.sh" todir = "unix-tools/bin"></copy>
-        <copy file = "sh/svReduce.sh" todir = "unix-tools/bin"></copy>
+
+    <target name="run_tests" depends="compileTests">
+        <junit>
+            <classpath>
+                <pathelement location="build/src" />
+                <pathelement location="build/test" />
+                <pathelement location="dependencies/junit-4.10.jar"/>
+            </classpath>
+            <batchtest>
+                <fileset dir="build/test">
+                    <include name="**/*Test*" />
+                </fileset>
+            </batchtest>
+            <formatter type = "brief" usefile = "false"/>
+        </junit>
     </target>
-    <target name="copyReadMe" depends="copyShells">
-        <copy file = "README.md" todir = "unix-tools"></copy>
+
+
+    <target name="instrument" depends="run_tests">
+        <delete file="cobertura.ser"/>
+        <delete dir="build/code-coverage/instrumented" />
+
+        <cobertura-instrument todir="build/code-coverage/instrumented">
+            <fileset dir="build/src">
+                <include name="**/*.class" />
+            </fileset>
+        </cobertura-instrument>
     </target>
-    <target name="createZip" depends="copyReadMe">
-        <zip zipFile = "unix-tools.zip" basedir = "unix-tools"></zip>
+
+    <target name="test-coverage" depends="run_tests">
+        <junit fork="yes" dir="." failureProperty="test.failed">
+            <classpath>
+                <pathelement location="build/code-coverage/instrumented"/>
+                <pathelement location="build/src" />
+                <pathelement location="build/test" />
+                <pathelement location="dependencies/junit-4.10.jar"/>
+            </classpath>
+
+            <classpath refid= "cobertura.classpath"/>
+
+            <formatter type="xml" />
+            <test name="testcase" todir="build/code-coverage/reports/xml" if="testcase" />
+            <batchtest todir="build/code-coverage/reports/xml" unless="testcase">
+                <fileset dir="test">
+                    <include name="**/*Test.java" />
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="build/code-coverage/reports/xml">
+            <fileset dir="build/code-coverage/reports/xml">
+                <include name="TEST-*.xml" />
+            </fileset>
+            <report format="frames" todir="build/code-coverage/reports/html" />
+        </junitreport>
     </target>
+
+    <target name="coverage-check">
+        <cobertura-check branchrate="34" totallinerate="100" />
+    </target>
+
+    <target name="coverage-report">
+        <cobertura-report srcdir="src" destdir="build/code-coverage/coverage/xml" format="xml" />
+    </target>
+
+    <target name="summary-coverage-report">
+        <cobertura-report srcdir="src" destdir="build/code-coverage/coverage/summaryxml" format="summaryXml" />
+    </target>
+
+    <target name="alternate-coverage-report">
+        <cobertura-report destdir="build/code-coverage/coverage/html">
+            <fileset dir="src">
+                <include name="**/*.java"/>
+            </fileset>
+        </cobertura-report>
+    </target>
+
+    <target name="coverage"
+            depends="instrument,test-coverage,coverage-report,summary-coverage-report,alternate-coverage-report"
+            description="Compile, instrument ourself, run the tests and generate JUnit and coverage reports."/>
+
+    <target name="createFolderStructure" depends="coverage">
+        <mkdir dir="unix-tools"/>
+        <mkdir dir="unix-tools/lib"/>
+        <mkdir dir="unix-tools/bin"/>
+        <mkdir dir="unix-tools/docs"/>
+        <copy todir="unix-tools/bin">
+            <fileset dir="tool-scripts"/>
+        </copy>
+        <copy file="README.md" tofile="unix-tools/README.md"/>
+    </target>
+
+    <target name="generateDocs">
+        <javadoc packagenames="soumyagh.unixtools.*"
+                 sourcepath="src"
+                 destdir="unix-tools/docs"
+                 author="true" version="true"/>
+    </target>
+
+    <target name="createJar" depends="run_tests,createFolderStructure">
+        <jar destfile="unix-tools/lib/unix-tools.jar" basedir="build/src"/>
+    </target>
+
+    <target name="dist" depends="createJar,generateDocs">
+        <mkdir dir="build/dist"/>
+        <zip destfile="build/dist/unix-tools.zip" basedir="unix-tools" update="true"/>
+    </target>
+
 </project>
