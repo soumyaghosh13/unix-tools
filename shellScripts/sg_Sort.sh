@@ -1,1 +1,0 @@
-java -cp $UNIXTOOLS_SH/unix-tools.jar soumya.unix-tools.cli SortMain $1 $2

@@ -1,1 +1,0 @@
-java -cp $SH_TOOL/unix-tools.jar soumya.unixtools.cli.HeadMain $1 $2
