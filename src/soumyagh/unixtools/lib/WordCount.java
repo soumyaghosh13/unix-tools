@@ -1,4 +1,4 @@
-package kashishm.unixtools.lib;
+package soumyagh.unixtools.lib;
 
 public class WordCount {
     public int numOfLines = 0, numOfWords = 0, numOfChars = 0;

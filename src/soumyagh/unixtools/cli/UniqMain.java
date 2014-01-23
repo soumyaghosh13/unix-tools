@@ -1,7 +1,7 @@
-package kashishm.unixtools.cli;
+package soumyagh.unixtools.cli;
 
-import kashishm.unixtools.fs.ReadWrite;
-import kashishm.unixtools.lib.Uniq;
+import soumyagh.unixtools.fs.ReadWrite;
+import soumyagh.unixtools.lib.Uniq;
 
 import java.io.IOException;
 

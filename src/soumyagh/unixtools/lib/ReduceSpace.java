@@ -1,4 +1,4 @@
-package kashishm.unixtools.lib;
+package soumyagh.unixtools.lib;
 
 public class ReduceSpace {
     public String removeSpaces(String text){

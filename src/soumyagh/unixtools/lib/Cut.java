@@ -1,4 +1,4 @@
-package kashishm.unixtools.lib;
+package soumyagh.unixtools.lib;
 
 public class Cut {
     public String cutLines(String data, int[] fieldNumbers, String delimiter) {

@@ -1,8 +1,8 @@
-package kashishm.unixtools.cli;
+package soumyagh.unixtools.cli;
 
-import kashishm.unixtools.lib.CLIParser;
-import kashishm.unixtools.fs.ReadWrite;
-import kashishm.unixtools.lib.Cut;
+import soumyagh.unixtools.lib.CLIParser;
+import soumyagh.unixtools.fs.ReadWrite;
+import soumyagh.unixtools.lib.Cut;
 
 import java.io.IOException;
 import java.util.Map;

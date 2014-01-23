@@ -1,6 +1,6 @@
-package kashishm.unixtools.cli;
-import kashishm.unixtools.fs.ReadWrite;
-import kashishm.unixtools.lib.WordCount;
+package soumyagh.unixtools.cli;
+import soumyagh.unixtools.fs.ReadWrite;
+import soumyagh.unixtools.lib.WordCount;
 
 import java.io.IOException;
 

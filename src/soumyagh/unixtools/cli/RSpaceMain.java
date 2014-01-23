@@ -1,7 +1,7 @@
-package kashishm.unixtools.cli;
+package soumyagh.unixtools.cli;
 
-import kashishm.unixtools.fs.ReadWrite;
-import kashishm.unixtools.lib.ReduceSpace;
+import soumyagh.unixtools.fs.ReadWrite;
+import soumyagh.unixtools.lib.ReduceSpace;
 
 import java.io.IOException;
 
